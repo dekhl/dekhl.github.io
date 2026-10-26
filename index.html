@@ -1,0 +1,596 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<link rel="icon" href="abdullah-photo.jpg">
+<meta property="og:title" content="Abdullah Mubeen | AI & Data">
+<meta property="og:description" content="AI and data student at Murdoch University, Perth. Open to summer internships.">
+<meta property="og:image" content="https://dekhl.github.io/abdullah-photo.jpg">
+<title>Abdullah Mubeen</title>
+<meta name="description" content="Portfolio of Abdullah Mubeen, AI and data student at Murdoch University, Perth.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,500..900&family=Manrope:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+html,body{margin:0}img{max-width:100%}[hidden]{display:none!important}:root{padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+</style>
+<style>
+/* Layout: dark single-theme site. Floating pill nav; giant two-line hero with a cut-out
+   portrait standing in front of the type; red is used only for emphasis and the active state. */
+:root {
+  color-scheme: dark;
+  --bg: #0a0809;
+  --bg-2: #121012;
+  --card: #18151a;
+  --line: #2a2529;
+  --fg: #f4f1f2;
+  --muted: #a39aa0;
+  --red: #e5193c;
+  --red-deep: #9e0f29;
+  --red-soft: rgba(229, 25, 60, 0.14);
+  --font-display: "Archivo", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --font-body: "Manrope", "Segoe UI", system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
+}
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body {
+  background: var(--bg); color: var(--fg);
+  font-family: var(--font-body); font-size: 16px; line-height: 1.6;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  overflow-x: hidden;
+}
+html { overflow-x: clip; }
+.wrap { max-width: 1160px; margin: 0 auto; }
+a { color: inherit; }
+a:focus-visible, button:focus-visible, summary:focus-visible { outline: 2px solid var(--red); outline-offset: 3px; border-radius: 6px; }
+h1, h2, h3, h4 { margin: 0; font-family: var(--font-display); line-height: 1; text-wrap: balance; }
+p { margin: 0; }
+.red { color: var(--red); }
+.eyebrow { font-family: var(--font-mono); font-size: 12px; letter-spacing: 0.1em; text-transform: uppercase; color: var(--muted); }
+.h2 { font-size: clamp(34px, 5vw, 56px); font-weight: 800; font-stretch: 100%; letter-spacing: -0.02em; }
+
+/* Nav */
+.nav-shell { position: sticky; top: calc(env(safe-area-inset-top, 0px) + 14px); z-index: 30; display: flex; justify-content: center; padding-top: 14px; }
+nav.pill {
+  display: flex; align-items: center; gap: 18px; padding: 8px 8px 8px 10px;
+  background: rgba(24, 21, 26, 0.82); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);
+  border: 1px solid var(--line); border-radius: 999px; max-width: 100%;
+}
+.brand { display: flex; align-items: center; gap: 10px; text-decoration: none; font-weight: 700; font-size: 14px; white-space: nowrap; }
+.brand img { width: 30px; height: 30px; border-radius: 50%; object-fit: cover; object-position: 50% 35%; border: 2px solid var(--red); }
+.nav-links { display: flex; gap: 16px; font-size: 14px; color: var(--muted); }
+.nav-links a { text-decoration: none; }
+.nav-links a:hover { color: var(--fg); }
+.btn-red {
+  display: inline-flex; align-items: center; gap: 8px; background: var(--red); color: #fff;
+  border: 0; border-radius: 999px; padding: 9px 16px; font: 600 14px var(--font-body); text-decoration: none; cursor: pointer; white-space: nowrap;
+  box-shadow: 0 8px 24px -10px var(--red);
+}
+.btn-red:hover { background: #f02a4c; }
+.btn-line {
+  display: inline-flex; align-items: center; gap: 8px; color: var(--fg); border: 1px solid var(--line);
+  border-radius: 999px; padding: 9px 16px; font: 600 14px var(--font-body); text-decoration: none; background: var(--card);
+}
+
+/* Hero */
+.hero { position: relative; padding-top: 48px; isolation: isolate; overflow-x: clip; }
+.hero::before {
+  content: ""; position: absolute; left: 50%; top: 42%; width: min(780px, 120vw); aspect-ratio: 1; transform: translate(-50%, -50%);
+  background: radial-gradient(circle, rgba(229, 25, 60, 0.38) 0%, rgba(158, 15, 41, 0.12) 40%, transparent 68%);
+  z-index: -1; pointer-events: none;
+}
+.hero-type { text-align: center; text-transform: uppercase; font-weight: 900; letter-spacing: -0.03em; line-height: 0.86; position: relative; z-index: 1; }
+.hero-type .l1 { display: block; white-space: nowrap; font-size: clamp(44px, 11.5vw, 156px); font-stretch: 78%; color: var(--fg); }
+.hero-type .l2 { display: block; white-space: nowrap; font-size: clamp(44px, 11.5vw, 156px); font-stretch: 78%; color: var(--red); }
+.stage {
+  position: relative; z-index: 2; margin: calc(clamp(44px, 11.5vw, 156px) * -1.05) auto 0;
+  width: clamp(260px, 38vw, 470px); max-width: 100%;
+}
+.ring {
+  position: absolute; left: 50%; top: 42%; width: 112%; aspect-ratio: 1; transform: translate(-50%, -50%);
+  border-radius: 50%; border: 1.5px dashed rgba(229, 25, 60, 0.55); z-index: -1; pointer-events: none;
+}
+.ring::after {
+  content: ""; position: absolute; inset: 9%; border-radius: 50%; border: 1px solid rgba(244, 241, 242, 0.08);
+}
+.ring i { position: absolute; width: 12px; height: 12px; border-radius: 50%; background: var(--red); box-shadow: 0 0 18px var(--red); top: 50%; left: -6px; margin-top: -6px; }
+.float-tag {
+  position: absolute; z-index: 3; display: inline-flex; align-items: center; gap: 8px; white-space: nowrap;
+  font-family: var(--font-mono); font-size: 12.5px; color: var(--fg);
+  background: rgba(24, 21, 26, 0.86); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);
+  border: 1px solid var(--line); border-radius: 999px; padding: 8px 13px; box-shadow: 0 14px 30px -14px rgba(0, 0, 0, 0.9);
+}
+.float-tag b { width: 8px; height: 8px; border-radius: 50%; background: var(--red); flex-shrink: 0; }
+.float-tag.hot { background: var(--red); border-color: var(--red); color: #fff; box-shadow: 0 14px 30px -12px var(--red); }
+.float-tag.hot b { background: #fff; }
+.ft1 { left: -30%; top: 34%; }
+.ft2 { right: -24%; top: 26%; }
+.ft3 { left: -22%; top: 54%; }
+.ft4 { right: -20%; top: 56%; }
+.portrait {
+  position: relative; display: block; margin: 0;
+  width: 100%; height: auto;
+  -webkit-mask-image: linear-gradient(to bottom, #000 72%, transparent 100%); mask-image: linear-gradient(to bottom, #000 72%, transparent 100%);
+  filter: drop-shadow(0 30px 40px rgba(0, 0, 0, 0.6));
+}
+.hero-foot {
+  position: relative; z-index: 3; display: grid; grid-template-columns: 1fr auto 1fr; gap: 24px; align-items: end;
+  margin-top: -110px; padding-bottom: 36px;
+}
+.hero-foot > * { min-width: 0; }
+.hero-foot .intro { max-width: 30ch; font-size: 17px; color: var(--fg); }
+.hero-foot .intro span { color: var(--muted); display: block; margin-top: 10px; font-size: 14px; }
+.hero-foot .right { justify-self: end; display: flex; flex-direction: column; align-items: flex-end; gap: 12px; }
+.status { display: inline-flex; align-items: center; gap: 8px; font-size: 13px; color: var(--muted); }
+.status::before { content: ""; width: 8px; height: 8px; border-radius: 50%; background: #3ddc84; box-shadow: 0 0 0 4px rgba(61, 220, 132, 0.15); }
+
+.strip {
+  display: flex; align-items: center; justify-content: space-between; gap: 18px; flex-wrap: wrap;
+  border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); padding-block: 18px; position: relative; z-index: 3; background: var(--bg);
+}
+.strip .who { font-size: 14px; color: var(--muted); }
+.strip .who b { color: var(--fg); font-weight: 600; }
+.tools { display: flex; flex-wrap: wrap; gap: 8px; }
+.tools span { font-family: var(--font-mono); font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; background: var(--bg-2); }
+
+section { padding-block: 96px 0; }
+.sec-head { display: flex; justify-content: space-between; align-items: flex-end; gap: 20px; flex-wrap: wrap; margin-bottom: 36px; }
+
+/* Featured project */
+.feature {
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 0; border: 1px solid var(--line); border-radius: 24px; overflow: hidden; background: var(--card);
+}
+.feature > * { min-width: 0; }
+.feature .copy { padding: 40px; display: flex; flex-direction: column; gap: 18px; }
+.tag { display: inline-flex; align-self: flex-start; font-family: var(--font-mono); font-size: 11px; letter-spacing: 0.08em; text-transform: uppercase; color: var(--red); background: var(--red-soft); border-radius: 999px; padding: 5px 10px; }
+.feature h3 { font-size: clamp(30px, 3.6vw, 42px); font-weight: 800; letter-spacing: -0.02em; }
+.feature .where { color: var(--muted); font-size: 14px; margin-top: -8px; }
+.feature p.body { color: #d7d0d4; }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chips span { font-size: 12px; font-weight: 600; border: 1px solid var(--line); border-radius: 999px; padding: 5px 11px; color: var(--fg); }
+.feature .visual {
+  background: radial-gradient(120% 90% at 100% 0%, rgba(229, 25, 60, 0.55), transparent 60%), linear-gradient(160deg, #2a0d14, #120a0d 70%);
+  padding: 36px; display: flex; align-items: center; justify-content: center;
+}
+.pipeline { width: 100%; max-width: 440px; display: grid; gap: 10px; font-family: var(--font-mono); font-size: 13px; }
+.pipe {
+  display: grid; grid-template-columns: 34px 1fr auto; align-items: center; gap: 12px;
+  background: rgba(10, 8, 9, 0.72); border: 1px solid rgba(255, 255, 255, 0.08); border-radius: 12px; padding: 12px 14px;
+}
+.pipe .n { width: 34px; height: 34px; border-radius: 9px; display: grid; place-items: center; background: var(--red-soft); color: var(--red); font-weight: 500; }
+.pipe .t { color: var(--fg); }
+.pipe .t small { display: block; color: var(--muted); font-size: 11px; margin-top: 2px; }
+.pipe .ok { font-size: 11px; color: #3ddc84; }
+.pipe.active { border-color: var(--red); background: rgba(229, 25, 60, 0.16); }
+
+/* Project cards */
+.grid3 { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 18px; margin-top: 18px; }
+.proj { border: 1px solid var(--line); border-radius: 20px; overflow: hidden; background: var(--card); display: flex; flex-direction: column; }
+.proj .art { aspect-ratio: 16 / 10; max-width: 100%; position: relative; overflow: hidden; }
+.proj .art svg { width: 100%; height: 100%; display: block; }
+.proj .info { padding: 22px; display: flex; flex-direction: column; gap: 10px; flex: 1; }
+.proj h4 { font-size: 22px; font-weight: 800; letter-spacing: -0.01em; }
+.proj p { color: var(--muted); font-size: 14.5px; }
+.proj .meta { margin-top: auto; padding-top: 12px; border-top: 1px solid var(--line); display: flex; justify-content: space-between; gap: 10px; font-family: var(--font-mono); font-size: 12px; color: var(--muted); flex-wrap: wrap; }
+.proj .meta b { color: var(--fg); font-weight: 500; }
+
+/* Services */
+.services { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 48px; align-items: start; }
+.services > * { min-width: 0; }
+.services .lead { color: var(--muted); margin-top: 18px; max-width: 38ch; }
+.toolbox { margin-top: 28px; }
+.toolbox .eyebrow { margin-bottom: 12px; display: block; }
+.svc-list { display: grid; gap: 12px; }
+.svc {
+  text-align: left; width: 100%; border: 1px solid var(--line); background: var(--card); color: var(--fg);
+  border-radius: 18px; padding: 20px 22px; cursor: pointer; font: inherit; transition: background 0.25s, border-color 0.25s, transform 0.25s;
+}
+.svc .top { display: flex; justify-content: space-between; align-items: center; gap: 12px; }
+.svc h4 { font-size: 20px; font-weight: 800; font-stretch: 100%; }
+.svc .num { font-family: var(--font-mono); font-size: 12px; color: var(--muted); }
+.svc .more { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 0.3s; }
+.svc .more > div { overflow: hidden; }
+.svc .more p { color: rgba(255, 255, 255, 0.86); font-size: 14.5px; padding-top: 10px; }
+.svc .more .chips { padding-top: 12px; }
+.svc .more .chips span { border-color: rgba(255, 255, 255, 0.35); }
+.svc[aria-expanded="true"] { background: linear-gradient(140deg, var(--red), var(--red-deep)); border-color: var(--red); box-shadow: 0 24px 48px -24px var(--red); }
+.svc[aria-expanded="true"] .num { color: rgba(255, 255, 255, 0.8); }
+.svc[aria-expanded="true"] .more { grid-template-rows: 1fr; }
+
+/* About */
+.about { display: grid; grid-template-columns: 0.85fr 1.15fr; gap: 48px; align-items: start; }
+.about > * { min-width: 0; }
+.photo-card { background: var(--red); border-radius: 22px; overflow: hidden; aspect-ratio: 4 / 5; max-width: 100%; position: relative; }
+.photo-card img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 0%; display: block; }
+.photo-card::after { content: ""; position: absolute; inset: 0; background: linear-gradient(to top, rgba(10, 8, 9, 0.35), transparent 30%); }
+.idcard { margin-top: 16px; }
+.idcard h4 { font-size: 22px; font-weight: 800; }
+.idcard p { color: var(--muted); font-size: 14px; margin-top: 4px; }
+.bio { display: grid; gap: 16px; color: #d7d0d4; margin-top: 22px; max-width: 62ch; }
+.history { margin-top: 36px; }
+.history h4.label { font-family: var(--font-body); font-size: 15px; font-weight: 700; margin-bottom: 10px; }
+.job { display: grid; grid-template-columns: 1fr auto; gap: 6px 16px; padding: 16px 18px; border: 1px solid var(--line); border-radius: 14px; background: var(--card); margin-top: 10px; }
+.job b { font-weight: 700; }
+.job span { color: var(--muted); font-size: 13.5px; }
+.job time { font-family: var(--font-mono); font-size: 12px; color: var(--muted); align-self: start; }
+
+/* FAQ */
+.faq { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; align-items: start; }
+.faq > * { min-width: 0; }
+.qa { display: grid; gap: 10px; }
+details { border: 1px solid var(--line); border-radius: 14px; background: var(--card); }
+summary { list-style: none; cursor: pointer; padding: 18px 20px; display: flex; justify-content: space-between; gap: 16px; font-weight: 600; }
+summary::-webkit-details-marker { display: none; }
+summary .q { display: flex; gap: 14px; }
+summary .q i { font-style: normal; font-family: var(--font-mono); font-size: 12px; color: var(--muted); padding-top: 3px; }
+summary::after { content: "+"; color: var(--red); font-size: 20px; line-height: 1; transition: transform 0.2s; }
+details[open] summary::after { transform: rotate(45deg); }
+details p { padding: 0 20px 18px 50px; color: var(--muted); font-size: 15px; }
+.cta-card {
+  background: linear-gradient(150deg, var(--red), var(--red-deep)); border-radius: 22px; padding: 30px; display: grid; gap: 16px;
+  box-shadow: 0 30px 60px -30px var(--red); position: sticky; top: 100px;
+}
+.cta-card img { width: 52px; height: 52px; border-radius: 50%; object-fit: cover; object-position: 50% 35%; border: 2px solid rgba(255, 255, 255, 0.7); }
+.cta-card h3 { font-size: 28px; font-weight: 800; font-stretch: 100%; }
+.cta-card p { color: rgba(255, 255, 255, 0.88); font-size: 15px; }
+.cta-card .btn-white { justify-self: start; background: #fff; color: var(--red-deep); border-radius: 999px; padding: 10px 18px; font-weight: 700; text-decoration: none; font-size: 14px; }
+
+/* Footer */
+footer { padding-block: 110px 0; }
+footer .big { font-size: clamp(40px, 6.4vw, 78px); font-weight: 800; font-stretch: 90%; letter-spacing: -0.02em; }
+.contact-row { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 18px; margin-top: 40px; padding-bottom: 28px; border-bottom: 1px solid var(--line); }
+.citem { min-width: 0; }
+.citem .eyebrow { display: block; margin-bottom: 6px; }
+.citem .val { font-weight: 600; overflow-wrap: anywhere; user-select: all; }
+.citem a.val { text-decoration: none; }
+.citem a.val:hover { color: var(--red); }
+.copybtn { margin-top: 8px; font-family: var(--font-mono); font-size: 11px; color: var(--muted); background: transparent; border: 1px solid var(--line); border-radius: 6px; padding: 4px 9px; cursor: pointer; }
+.copybtn:hover { color: var(--fg); border-color: var(--muted); }
+.foot-meta { display: flex; justify-content: space-between; gap: 12px; flex-wrap: wrap; padding-block: 18px; color: var(--muted); font-size: 13px; }
+.giant {
+  font-family: var(--font-display); font-weight: 900; font-stretch: 72%; text-transform: uppercase; color: var(--red);
+  font-size: clamp(64px, 17.5vw, 232px); line-height: 0.82; letter-spacing: -0.03em; text-align: center; white-space: nowrap;
+  padding-bottom: 18px; overflow: hidden; display: block; width: 100%;
+  background: linear-gradient(to bottom, var(--red) 40%, rgba(229, 25, 60, 0.15)); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent;
+}
+
+/* Floating contact pill */
+.float {
+  position: fixed; left: 50%; transform: translateX(-50%); bottom: calc(18px + env(safe-area-inset-bottom, 0px)); z-index: 40;
+  display: flex; align-items: center; gap: 12px; padding: 7px 7px 7px 16px; border-radius: 999px;
+  background: rgba(24, 21, 26, 0.88); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); border: 1px solid var(--line);
+  font-size: 13px; white-space: nowrap;
+}
+.float small { display: block; color: var(--muted); font-size: 11px; }
+.float b { font-weight: 700; }
+
+@media (max-width: 900px) {
+  .feature, .services, .about, .faq { grid-template-columns: 1fr; }
+  .grid3 { grid-template-columns: 1fr; }
+  .contact-row { grid-template-columns: 1fr 1fr; }
+  .hero-foot { grid-template-columns: 1fr; margin-top: -40px; text-align: center; justify-items: center; }
+  .hero-foot .intro { max-width: 40ch; }
+  .hero-foot .right { justify-self: center; align-items: center; }
+  .hero-foot .spacer { display: none; }
+  .cta-card { position: static; }
+  .about .photo-card { max-width: 420px; }
+}
+@media (max-width: 560px) {
+  .float-tag { font-size: 11px; padding: 6px 10px; }
+  .ft1 { left: -6%; top: 34%; } .ft2 { right: -6%; top: 22%; } .ft3, .ft4 { display: none; }
+  .nav-links { display: none; }
+  .feature .copy, .feature .visual { padding: 24px; }
+  .contact-row { grid-template-columns: 1fr; }
+  details p { padding-left: 20px; }
+  section { padding-block: 72px 0; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .portrait { animation: rise 0.9s cubic-bezier(.2,.7,.2,1) both; }
+  .ring { animation: spin 40s linear infinite; }
+  .float-tag { animation: bob 5s ease-in-out infinite; }
+  .ft2 { animation-delay: -1.2s; } .ft3 { animation-delay: -2.4s; } .ft4 { animation-delay: -3.6s; }
+  @keyframes spin { to { transform: translate(-50%, -50%) rotate(360deg); } }
+  @keyframes bob { 50% { translate: 0 -8px; } }
+  .hero-type .l1 { animation: slide 0.8s cubic-bezier(.2,.7,.2,1) both; }
+  .hero-type .l2 { animation: slide 0.8s 0.12s cubic-bezier(.2,.7,.2,1) both; }
+  @keyframes rise { from { transform: translateY(24px); } to { transform: none; } }
+  @keyframes slide { from { transform: translateY(18px); opacity: 0.4; } to { transform: none; opacity: 1; } }
+}
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } * { transition: none !important; } }
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+  <div class="nav-shell">
+    <nav class="pill" aria-label="Main">
+      <a class="brand" href="#top"><img src="abdullah-photo.jpg" alt="">Abdullah M.</a>
+      <div class="nav-links">
+        <a href="#work">Work</a>
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+      </div>
+      <a class="btn-red" href="#contact">Contact</a>
+    </nav>
+  </div>
+
+  <header class="hero" id="top">
+    <h1 class="hero-type" aria-label="Turn data into decisions">
+      <span class="l1">Turn data</span>
+      <span class="l2">into decisions</span>
+    </h1>
+    <div class="stage">
+      <div class="ring" aria-hidden="true"><i></i></div>
+      <img class="portrait" src="abdullah.webp" alt="Portrait of Abdullah Mubeen" width="900" height="773">
+      <span class="float-tag ft1" aria-hidden="true"><b></b>Python · SQL</span>
+      <span class="float-tag hot ft2" aria-hidden="true"><b></b>Azure AI</span>
+      <span class="float-tag ft3" aria-hidden="true"><b></b>97% ML accuracy</span>
+      <span class="float-tag ft4" aria-hidden="true"><b></b>Streamlit apps</span>
+    </div>
+    <div class="hero-foot">
+      <p class="intro">I build AI and data tools that turn messy information into decisions people trust.<span>Bachelor of IT (AI) · Murdoch University · Perth</span></p>
+      <div class="spacer"></div>
+      <div class="right">
+        <span class="status">Open to summer internships</span>
+        <a class="btn-red" href="#work">View my work ↗</a>
+      </div>
+    </div>
+  </header>
+
+  <div class="strip">
+    <p class="who"><b>Abdullah Mubeen</b> · AI &amp; Data · Graduating June 2027</p>
+    <div class="tools" aria-label="Tools">
+      <span>Python</span><span>SQL</span><span>Azure AI</span><span>Streamlit</span><span>Pandas</span><span>scikit-learn</span><span>Git</span>
+    </div>
+  </div>
+
+  <section id="work">
+    <div class="sec-head">
+      <h2 class="h2">Latest <span class="red">projects</span></h2>
+      <a class="btn-line" href="https://github.com/dekhl" target="_blank" rel="noopener">View all on GitHub ↗</a>
+    </div>
+
+    <article class="feature">
+      <div class="copy">
+        <span class="tag">Featured · Work placement 2026</span>
+        <h3>AI Grant Intelligence System</h3>
+        <p class="where">Office of Alumni &amp; Philanthropy, Murdoch University</p>
+        <p class="body">Grant information sat in scattered spreadsheets and funder websites, and staff checked it by hand. I worked with the team to understand their process, then built an end-to-end system that extracts, verifies and organises funding opportunities so staff can search and export them in seconds.</p>
+        <div class="chips"><span>Python</span><span>Azure AI</span><span>SQLite</span><span>Streamlit</span><span>Excel export</span></div>
+      </div>
+      <div class="visual" aria-hidden="true">
+        <div class="pipeline">
+          <div class="pipe"><span class="n">01</span><span class="t">Ingest spreadsheets<small>field standardisation</small></span><span class="ok">✓</span></div>
+          <div class="pipe active"><span class="n">02</span><span class="t">AI extraction + web check<small>Azure AI services</small></span><span class="ok">✓</span></div>
+          <div class="pipe"><span class="n">03</span><span class="t">Validate &amp; de-duplicate<small>funder identity · grant rounds</small></span><span class="ok">✓</span></div>
+          <div class="pipe"><span class="n">04</span><span class="t">Search &amp; export<small>Streamlit → Excel</small></span><span class="ok">✓</span></div>
+        </div>
+      </div>
+    </article>
+
+    <div class="grid3">
+      <article class="proj">
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+            <rect width="320" height="200" fill="#1d0f14"/>
+            <g stroke="#3a2a30" stroke-width="1"><line x1="20" y1="50" x2="300" y2="50"/><line x1="20" y1="95" x2="300" y2="95"/><line x1="20" y1="140" x2="300" y2="140"/></g>
+            <polyline points="20,150 60,128 100,136 140,98 180,108 220,72 260,84 300,48" fill="none" stroke="#e5193c" stroke-width="3" stroke-linejoin="round"/>
+            <polyline points="20,160 60,150 100,142 140,138 180,126 220,130 260,114 300,108" fill="none" stroke="#a39aa0" stroke-width="2" stroke-dasharray="4 4"/>
+            <circle cx="300" cy="48" r="5" fill="#e5193c"/>
+            <rect x="20" y="168" width="58" height="18" rx="9" fill="#2a2529"/><rect x="86" y="168" width="48" height="18" rx="9" fill="#2a2529"/><rect x="142" y="168" width="52" height="18" rx="9" fill="#e5193c" opacity="0.85"/>
+          </svg>
+        </div>
+        <div class="info">
+          <span class="tag">Analytics</span>
+          <h4>Football Decision Support</h4>
+          <p>Interactive dashboards with club, league, date and venue filters, comparative KPIs and trend analysis built around a coach's questions.</p>
+          <div class="meta"><span>Streamlit · Plotly</span><b>2026</b></div>
+        </div>
+      </article>
+      <article class="proj">
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+            <rect width="320" height="200" fill="#1d0f14"/>
+            <line x1="160" y1="24" x2="160" y2="180" stroke="#3a2a30" stroke-width="1.5"/>
+            <rect x="160" y="34" width="110" height="18" rx="4" fill="#e5193c"/>
+            <rect x="160" y="62" width="78" height="18" rx="4" fill="#e5193c" opacity="0.8"/>
+            <rect x="104" y="90" width="56" height="18" rx="4" fill="#a39aa0" opacity="0.7"/>
+            <rect x="160" y="118" width="46" height="18" rx="4" fill="#e5193c" opacity="0.6"/>
+            <rect x="122" y="146" width="38" height="18" rx="4" fill="#a39aa0" opacity="0.5"/>
+            <text x="22" y="48" fill="#a39aa0" font-family="JetBrains Mono, monospace" font-size="11">radius</text>
+            <text x="22" y="76" fill="#a39aa0" font-family="JetBrains Mono, monospace" font-size="11">texture</text>
+            <text x="22" y="104" fill="#a39aa0" font-family="JetBrains Mono, monospace" font-size="11">symmetry</text>
+            <text x="22" y="132" fill="#a39aa0" font-family="JetBrains Mono, monospace" font-size="11">area</text>
+            <text x="22" y="160" fill="#a39aa0" font-family="JetBrains Mono, monospace" font-size="11">smoothness</text>
+          </svg>
+        </div>
+        <div class="info">
+          <span class="tag">Explainable ML</span>
+          <h4>Breast Cancer Prediction</h4>
+          <p>Compared classification models with careful preparation and feature engineering, then used SHAP and LIME to explain each prediction.</p>
+          <div class="meta"><span>scikit-learn · SHAP · LIME</span><b>97%+ accuracy</b></div>
+        </div>
+      </article>
+      <article class="proj">
+        <div class="art" aria-hidden="true">
+          <svg viewBox="0 0 320 200" preserveAspectRatio="xMidYMid slice">
+            <rect width="320" height="200" fill="#1d0f14"/>
+            <g fill="#e5193c"><circle cx="80" cy="70" r="5"/><circle cx="96" cy="58" r="4"/><circle cx="70" cy="88" r="4"/><circle cx="102" cy="82" r="6"/><circle cx="86" cy="96" r="3"/><circle cx="62" cy="64" r="3"/></g>
+            <g fill="#a39aa0" opacity="0.8"><circle cx="212" cy="62" r="5"/><circle cx="230" cy="74" r="4"/><circle cx="204" cy="82" r="6"/><circle cx="240" cy="54" r="3"/><circle cx="222" cy="92" r="3"/></g>
+            <g fill="#f4f1f2" opacity="0.55"><circle cx="150" cy="140" r="5"/><circle cx="168" cy="150" r="4"/><circle cx="136" cy="156" r="3"/><circle cx="160" cy="128" r="3"/><circle cx="176" cy="134" r="6"/></g>
+            <g fill="none" stroke-width="1.5" stroke-dasharray="3 4"><circle cx="84" cy="77" r="34" stroke="#e5193c"/><circle cx="220" cy="73" r="32" stroke="#a39aa0"/><circle cx="158" cy="142" r="30" stroke="#f4f1f2" opacity="0.5"/></g>
+          </svg>
+        </div>
+        <div class="info">
+          <span class="tag">NLP</span>
+          <h4>Social Media Topic Modelling</h4>
+          <p>Turned unstructured posts into thematic clusters and visual summaries that make large text datasets easy to interpret.</p>
+          <div class="meta"><span>BERTopic · Python</span><b>Text → themes</b></div>
+        </div>
+      </article>
+    </div>
+  </section>
+
+  <section id="services">
+    <div class="services">
+      <div>
+        <h2 class="h2">What I help you <span class="red">build…</span></h2>
+        <p class="lead">Practical AI and data work for teams buried in spreadsheets, manual checks and reports nobody reads.</p>
+        <div class="toolbox">
+          <span class="eyebrow">Tools that I use</span>
+          <div class="tools"><span>Python</span><span>SQL</span><span>SQLite</span><span>Pandas</span><span>NumPy</span><span>Azure</span><span>Streamlit</span><span>Plotly</span><span>Excel</span><span>Git</span><span>Jupyter</span><span>Linux</span></div>
+        </div>
+      </div>
+      <div class="svc-list" id="svc-list">
+        <button class="svc" type="button" aria-expanded="true">
+          <div class="top"><h4>Workflow automation</h4><span class="num">01</span></div>
+          <div class="more"><div><p>Replacing manual checking with Python pipelines that ingest, clean and validate data, with an audit trail.</p><div class="chips"><span>Python</span><span>Data validation</span><span>Pipelines</span></div></div></div>
+        </button>
+        <button class="svc" type="button" aria-expanded="false">
+          <div class="top"><h4>AI-assisted extraction</h4><span class="num">02</span></div>
+          <div class="more"><div><p>Pulling structured facts out of documents and websites with Azure AI services, then verifying them.</p><div class="chips"><span>Azure AI</span><span>NLP</span><span>Verification</span></div></div></div>
+        </button>
+        <button class="svc" type="button" aria-expanded="false">
+          <div class="top"><h4>Dashboards &amp; analytics</h4><span class="num">03</span></div>
+          <div class="more"><div><p>Interactive Streamlit dashboards with filters, KPIs and exports that non-technical people can use on day one.</p><div class="chips"><span>Streamlit</span><span>Plotly</span><span>SQL</span></div></div></div>
+        </button>
+        <button class="svc" type="button" aria-expanded="false">
+          <div class="top"><h4>Machine learning</h4><span class="num">04</span></div>
+          <div class="more"><div><p>Building and evaluating models, and explaining their predictions in plain terms with SHAP and LIME.</p><div class="chips"><span>scikit-learn</span><span>Explainability</span><span>Evaluation</span></div></div></div>
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section id="about">
+    <div class="about">
+      <div>
+        <div class="photo-card"><img src="abdullah-photo.jpg" alt="Abdullah Mubeen"></div>
+        <div class="idcard">
+          <h4>Abdullah Mubeen</h4>
+          <p>AI &amp; Data Student · Automation Builder · Perth, WA</p>
+        </div>
+      </div>
+      <div>
+        <h2 class="h2">Building tools <span class="red">that make sense.</span></h2>
+        <div class="bio">
+          <p>I'm studying a Bachelor of Information Technology (Artificial Intelligence) at Murdoch University and graduate in June 2027.</p>
+          <p>I'm most interested in the gap between messy real-world data and the people who need answers from it. On my work placement I sat with staff to understand how they reviewed grants, then built a system they could actually use.</p>
+          <p>On the IT Service Desk I help students every week, which has taught me to explain technical fixes in plain language and stay calm under pressure.</p>
+        </div>
+        <div class="history">
+          <h4 class="label">Experience &amp; education</h4>
+          <div class="job"><b>AI &amp; Grant Intelligence Placement</b><time>2026</time><span>Office of Alumni &amp; Philanthropy, Murdoch University</span></div>
+          <div class="job"><b>Student IT Service Desk</b><time>2026</time><span>Murdoch University</span></div>
+          <div class="job"><b>Bachelor of IT (Artificial Intelligence)</b><time>Exp. 2027</time><span>Murdoch University · Machine Learning, Systems Analysis &amp; Design, IT Project Development</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq">
+    <div class="sec-head"><h2 class="h2">FAQs</h2><span class="eyebrow">For recruiters</span></div>
+    <div class="faq">
+      <div class="qa">
+        <details open>
+          <summary><span class="q"><i>01</i>What roles are you looking for?</span></summary>
+          <p>Internships and graduate roles in data analysis, AI, automation and business intelligence, based in Perth.</p>
+        </details>
+        <details>
+          <summary><span class="q"><i>02</i>When are you available?</span></summary>
+          <p>Full-time over the summer break, and part-time during semester. I graduate in June 2027.</p>
+        </details>
+        <details>
+          <summary><span class="q"><i>03</i>What's your strongest skill?</span></summary>
+          <p>Turning unstructured information into clean, validated data with Python and SQL, then putting it in a tool people can search.</p>
+        </details>
+        <details>
+          <summary><span class="q"><i>04</i>Have you worked with real stakeholders?</span></summary>
+          <p>Yes. My placement system was built for a Murdoch University department, from requirements through to deployment preparation.</p>
+        </details>
+        <details>
+          <summary><span class="q"><i>05</i>Where can I see your code?</span></summary>
+          <p>On GitHub at github.com/dekhl.</p>
+        </details>
+      </div>
+      <aside class="cta-card">
+        <img src="abdullah-photo.jpg" alt="">
+        <h3>Hiring an intern this summer?</h3>
+        <p>I'd love to hear about your team and the problems you're working on.</p>
+        <a class="btn-white" href="#contact">Get in touch</a>
+      </aside>
+    </div>
+  </section>
+
+  <footer id="contact">
+    <h2 class="big">Let's <span class="red">build</span><br>something useful together.</h2>
+    <div class="contact-row">
+      <div class="citem"><span class="eyebrow">Email</span><span class="val" id="email">mubeenabdullah824@gmail.com</span><br><button class="copybtn" type="button" data-copy="email">Copy</button></div>
+      <div class="citem"><span class="eyebrow">Phone</span><span class="val" id="phone">+61 401 323 749</span><br><button class="copybtn" type="button" data-copy="phone">Copy</button></div>
+      <div class="citem"><span class="eyebrow">LinkedIn</span><a class="val" href="https://linkedin.com/in/abdullah-mubeen-ai" target="_blank" rel="noopener">abdullah-mubeen-ai ↗</a></div>
+      <div class="citem"><span class="eyebrow">GitHub</span><a class="val" href="https://github.com/dekhl" target="_blank" rel="noopener">github.com/dekhl ↗</a></div>
+    </div>
+    <div class="foot-meta"><span>Work · Services · About</span><span>© 2026 Abdullah Mubeen · Perth, WA</span></div>
+    <div class="giant" aria-hidden="true"><span>Abdullah</span></div>
+    <div style="height:80px"></div>
+  </footer>
+</div>
+
+<a class="float" href="#contact" aria-label="Contact Abdullah"><span><b>Speak to me</b><small>Email or call</small></span><span class="btn-red" style="padding:8px 12px">✉</span></a>
+
+<script>
+(function () {
+  var list = document.getElementById('svc-list');
+  list.querySelectorAll('.svc').forEach(function (b) {
+    b.addEventListener('click', function () {
+      list.querySelectorAll('.svc').forEach(function (o) { o.setAttribute('aria-expanded', o === b ? 'true' : 'false'); });
+    });
+  });
+  var giant = document.querySelector('.giant');
+  function fit() {
+    giant.style.fontSize = '100px';
+    var w = giant.clientWidth, sw = giant.firstElementChild.offsetWidth;
+    if (sw > 0) giant.style.fontSize = Math.min(232, Math.floor(100 * w / sw * 0.98)) + 'px';
+  }
+  var lines = document.querySelectorAll('.hero-type .l1, .hero-type .l2');
+  var portrait = document.querySelector('.stage');
+  function fitHero() {
+    var min = Infinity;
+    lines.forEach(function (l) { l.style.fontSize = ''; });
+    lines.forEach(function (l) {
+      var base = parseFloat(getComputedStyle(l).fontSize);
+      var size = l.scrollWidth > l.clientWidth ? Math.floor(base * l.clientWidth / l.scrollWidth * 0.98) : base;
+      min = Math.min(min, size);
+    });
+    lines.forEach(function (l) { l.style.fontSize = min + 'px'; });
+    portrait.style.marginTop = (-1.05 * min) + 'px';
+  }
+  function fitAll() { fit(); fitHero(); }
+  fitAll(); window.addEventListener('resize', fitAll);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(fitAll);
+  document.querySelectorAll('.copybtn').forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var el = document.getElementById(btn.dataset.copy);
+      var text = el.textContent.trim();
+      var reset = function () { setTimeout(function () { btn.textContent = 'Copy'; }, 1600); };
+      var select = function () {
+        var r = document.createRange(); r.selectNodeContents(el);
+        var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+        btn.textContent = 'Selected'; reset();
+      };
+      try {
+        if (navigator.clipboard && navigator.clipboard.writeText) {
+          navigator.clipboard.writeText(text).then(function () { btn.textContent = 'Copied'; reset(); }, select);
+        } else { select(); }
+      } catch (e) { select(); }
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
